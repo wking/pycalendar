@@ -13,9 +13,29 @@ weight.
 
 __ `elmcity code`_
 
+Installation
+============
+
+Pycalendar is packaged with distutils_, so you can install it in all
+the usual ways.  Any of the following should work::
+
+  $ python setup.py install
+  $ pip install pycalendar
+
+There are no dependencies outside Python's standard library.
+
+Testing
+=======
+
+Test with nose_::
+
+  $ nosetests --with-doctest --doctest-tests pycalendar
+
 
 .. _Calagator: http://calagator.org/
+.. _distutils: http://docs.python.org/3/distutils/
 .. _elmcity: http://elmcity.cloudapp.net/
 .. _elmcity code: https://github.com/judell/elmcity
 .. _feedparser: https://pypi.python.org/pypi/feedparser/
 .. _Google Calendar: https://support.google.com/calendar/
+.. _nose: https://nose.readthedocs.org/en/latest/
