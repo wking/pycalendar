@@ -1,11 +1,16 @@
 # Copyright
 
+import logging as _logging
 import urllib.request as _urllib_request
 
 from . import USER_AGENT as _USER_AGENT
+from . import entry as _entry
 
 
-class Feed (object):
+_LOG = _logging.getLogger(__name__)
+
+
+class Feed (set):
     r"""An iCalendar feed (:RFC:`5545`)
 
     Figure out where the example feed is located, relative to the
@@ -57,8 +62,26 @@ class Feed (object):
     >>> f.write(stream=stream)
     >>> stream.getvalue()  # doctest: +ELLIPSIS
     'BEGIN:VCALENDAR\r\nVERSION:2.0\r\n...END:VCALENDAR\r\n'
+
+    You can also iterate through events:
+
+    >>> for event in f:
+    ...     print(repr(event))
+    ...     print(event)
+    <Entry type:VEVENT>
+    BEGIN:VEVENT
+    UID:2013-06-30@geohash.invalid
+    DTSTAMP:2013-06-30T00:00:00Z
+    DTSTART;VALUE=DATE:20130630
+    DTEND;VALUE=DATE:20130701
+    SUMMARY:XKCD geohashing\, Boston graticule
+    URL:http://xkcd.com/426/
+    LOCATION:Snow Hill\, Dover\, Massachusetts
+    GEO:42.226663,-71.28676
+    END:VEVENT
     """
     def __init__(self, url, content=None, user_agent=None):
+        super(Feed, self).__init__()
         self.url = url
         self.content = content
         if user_agent is None:
@@ -92,6 +115,37 @@ class Feed (object):
                 raise ValueError(content_type)
             byte_content = f.read()
         self.content = str(byte_content, encoding='UTF-8')
+
+    def process(self):
+        _LOG.info('{!r}: processing {} content characters'.format(
+            self, len(self.content)))
+        entry = None
+        stack = []
+        for i,line in enumerate(self.content.split('\r\n')):
+            if line.startswith('BEGIN:'):
+                _type = line.split(':', 1)[1]
+                _LOG.info('{!r}: begin {}'.format(self, _type))
+                stack.append(_type)
+                if len(stack) == 2:
+                    if entry:
+                        raise ValueError('double entry by line {}'.format(i))
+                    entry = _entry.Entry(type=_type, content=[])
+            _LOG.info(stack)
+            if entry:
+                entry.content.append(line)
+            if line.startswith('END:'):
+                _type = line.split(':', 1)[1]
+                _LOG.info('{!r}: end {}'.format(self, _type))
+                if not stack or _type != stack[-1]:
+                    raise ValueError(
+                        ('closing {} on line {}, but current stack is {}'
+                         ).format(_type, i, stack))
+                stack.pop(-1)
+                if len(stack) == 1:
+                    entry.content.append('')  # trailing blankline
+                    entry.content = '\r\n'.join(entry.content)
+                    self.add(entry)
+                    entry = None
 
     def write(self, stream):
         stream.write(self.content)
