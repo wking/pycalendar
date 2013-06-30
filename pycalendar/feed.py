@@ -121,7 +121,7 @@ class Feed (set):
             self, len(self.content)))
         entry = None
         stack = []
-        for i,line in enumerate(self.content.split('\r\n')):
+        for i,line in enumerate(self.content.splitlines()):
             if line.startswith('BEGIN:'):
                 _type = line.split(':', 1)[1]
                 _LOG.info('{!r}: begin {}'.format(self, _type))
