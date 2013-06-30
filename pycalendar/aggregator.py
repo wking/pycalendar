@@ -54,7 +54,7 @@ class Aggregator (list):
     SUMMARY:XKCD geohashing\, Boston graticule
     URL:http://xkcd.com/426/
     LOCATION:Snow Hill\, Dover\, Massachusetts
-    GEO:42.226663,-71.28676
+    GEO:42.226663;-71.28676
     END:VEVENT
     END:VCALENDAR
     <BLANKLINE>
