@@ -146,6 +146,11 @@ class Entry (dict):
                     self._add_value(key=value, value=child, force_list=True)
                     child_lines = []
             elif not stack:  # our own data, not a child's
+                if key == 'VERSION':
+                    v = _text.unescape(value)
+                    if v != '2.0':
+                        raise NotImplementedError(
+                            'cannot parse VERSION {} feed'.format(v))
                 self._add_value(key=key, value=value)
 
     def _add_value(self, key, value, force_list=False):
