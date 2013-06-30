@@ -144,6 +144,7 @@ class Feed (set):
                 if len(stack) == 1:
                     entry.content.append('')  # trailing blankline
                     entry.content = '\r\n'.join(entry.content)
+                    entry.process()
                     self.add(entry)
                     entry = None
 
