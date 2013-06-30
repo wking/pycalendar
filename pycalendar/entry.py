@@ -200,6 +200,10 @@ class Entry (dict):
             self._lines.append(''.join(semantic_line_chunks))
 
     def get_text(self, *args, **kwargs):
+        """Get and unescape a text value
+
+        As described in :RFC:`5545`, section 3.3.11 (Text)
+        """
         value = self.get(*args, **kwargs)
         return _text.unescape(value)
 
