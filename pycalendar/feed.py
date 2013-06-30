@@ -73,7 +73,12 @@ class Feed (object):
     def __repr__(self):
         return '<{} url:{}>'.format(type(self).__name__, self.url)
 
-    def fetch(self):
+    def fetch(self, force=False):
+        if self.content is None or force:
+            self._fetch()
+            self.process()
+
+    def _fetch(self):
         request = _urllib_request.Request(
             url=self.url,
             headers={
