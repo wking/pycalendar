@@ -1,5 +1,8 @@
 # Copyright
 
+from . import text as _text
+
+
 class Aggregator (list):
     r"""An iCalendar feed aggregator
 
@@ -74,8 +77,8 @@ class Aggregator (list):
 
     def write(self, stream):
         stream.write('BEGIN:VCALENDAR\r\n')
-        stream.write('VERSION:{}\r\n'.format(self.version))
-        stream.write('PRODID:{}\r\n'.format(self.prodid))
+        stream.write('VERSION:{}\r\n'.format(_text.escape(self.version)))
+        stream.write('PRODID:{}\r\n'.format(_text.escape(self.prodid)))
         for feed in self:
             for entry in feed:
                 entry.write(stream=stream)
