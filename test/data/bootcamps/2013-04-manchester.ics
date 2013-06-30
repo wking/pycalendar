@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-04-manchester//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-04-manchester@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130418
+DTEND;VALUE=DATE:20130420
+SUMMARY:University of Manchester
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-04-manchester.html":http://software-carpentry.org/bootcamps/2013-04-manchester.html
+URL:http://software-carpentry.org/bootcamps/2013-04-manchester.html
+LOCATION:University of Manchester
+GEO:53.4783491;-2.2416052
+END:VEVENT
+END:VCALENDAR

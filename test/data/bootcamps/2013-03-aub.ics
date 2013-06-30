@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-03-aub//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-03-aub@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130320
+DTEND;VALUE=DATE:20130322
+SUMMARY:American University of Beirut
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-03-aub.html":http://software-carpentry.org/bootcamps/2013-03-aub.html
+URL:http://software-carpentry.org/bootcamps/2013-03-aub.html
+LOCATION:American University of Beirut
+GEO:33.900058;35.482727
+END:VEVENT
+END:VCALENDAR

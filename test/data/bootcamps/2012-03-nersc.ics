@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-03-nersc//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-03-nersc@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120328
+DTEND;VALUE=DATE:20120330
+SUMMARY:NERSC
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-03-nersc.html":http://software-carpentry.org/bootcamps/2012-03-nersc.html
+URL:http://software-carpentry.org/bootcamps/2012-03-nersc.html
+LOCATION:NERSC
+GEO:37.8083814;-122.2675787
+END:VEVENT
+END:VCALENDAR

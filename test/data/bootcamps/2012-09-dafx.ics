@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-09-dafx//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-09-dafx@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120913
+DTEND;VALUE=DATE:20120915
+SUMMARY:DAFx Conference (University of York)
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-09-dafx.html":http://software-carpentry.org/bootcamps/2012-09-dafx.html
+URL:http://software-carpentry.org/bootcamps/2012-09-dafx.html
+LOCATION:DAFx Conference (University of York)
+GEO:53.9481933;-1.0529144
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-04-arizona//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-04-arizona@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130404
+DTEND;VALUE=DATE:20130406
+SUMMARY:University of Arizona
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-04-arizona.html":http://software-carpentry.org/bootcamps/2013-04-arizona.html
+URL:http://software-carpentry.org/bootcamps/2013-04-arizona.html
+LOCATION:University of Arizona
+GEO:32.2363584;-110.9495396
+END:VEVENT
+END:VCALENDAR

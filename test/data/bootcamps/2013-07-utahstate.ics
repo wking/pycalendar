@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-07-utahstate//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-07-utahstate@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130716
+DTEND;VALUE=DATE:20130718
+SUMMARY:CUAHSI Water Data Center/Utah State University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-07-utahstate.html":http://software-carpentry.org/bootcamps/2013-07-utahstate.html
+URL:http://software-carpentry.org/bootcamps/2013-07-utahstate.html
+LOCATION:CUAHSI Water Data Center/Utah State University
+GEO:41.74080;-111.81416
+END:VEVENT
+END:VCALENDAR

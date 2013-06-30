@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-02-itcp//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-02-itcp@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120220
+DTEND;VALUE=DATE:20120303
+SUMMARY:International Centre for Theoretical Physics
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-02-itcp.html":http://software-carpentry.org/bootcamps/2012-02-itcp.html
+URL:http://software-carpentry.org/bootcamps/2012-02-itcp.html
+LOCATION:International Centre for Theoretical Physics
+GEO:45.703255;13.718013
+END:VEVENT
+END:VCALENDAR

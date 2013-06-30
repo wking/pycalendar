@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-09-stroud//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-09-stroud@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130930
+DTEND;VALUE=DATE:20131002
+SUMMARY:Stroud Water Research Center
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-09-stroud.html":http://software-carpentry.org/bootcamps/2013-09-stroud.html
+URL:http://software-carpentry.org/bootcamps/2013-09-stroud.html
+LOCATION:Stroud Water Research Center
+GEO:39.8609663;-75.7795073
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-04-wisc//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-04-wisc@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130429
+DTEND;VALUE=DATE:20130501
+SUMMARY:University of Wisconsin - Madison
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-04-wisc.html":http://software-carpentry.org/bootcamps/2013-04-wisc.html
+URL:http://software-carpentry.org/bootcamps/2013-04-wisc.html
+LOCATION:University of Wisconsin - Madison
+GEO:43.07718;-89.40399
+END:VEVENT
+END:VCALENDAR

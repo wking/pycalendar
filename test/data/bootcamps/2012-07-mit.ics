@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-07-mit//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-07-mit@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120709
+DTEND;VALUE=DATE:20120711
+SUMMARY:MIT
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-07-mit.html":http://software-carpentry.org/bootcamps/2012-07-mit.html
+URL:http://software-carpentry.org/bootcamps/2012-07-mit.html
+LOCATION:MIT
+GEO:42.3591326;-71.093201
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-12-uta//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-12-uta@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121210
+DTEND;VALUE=DATE:20121212
+SUMMARY:University of Texas (Austin)
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-12-uta.html":http://software-carpentry.org/bootcamps/2012-12-uta.html
+URL:http://software-carpentry.org/bootcamps/2012-12-uta.html
+LOCATION:University of Texas (Austin)
+GEO:30.2835989;-97.7344283
+END:VEVENT
+END:VCALENDAR

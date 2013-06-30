@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-duke//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-duke@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130520
+DTEND;VALUE=DATE:20130522
+SUMMARY:Duke University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-duke.html":http://software-carpentry.org/bootcamps/2013-05-duke.html
+URL:http://software-carpentry.org/bootcamps/2013-05-duke.html
+LOCATION:Duke University
+GEO:36.00283;-78.93827
+END:VEVENT
+END:VCALENDAR

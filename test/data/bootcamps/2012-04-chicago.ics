@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-04-chicago//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-04-chicago@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120402
+DTEND;VALUE=DATE:20120404
+SUMMARY:University of Chicago
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-04-chicago.html":http://software-carpentry.org/bootcamps/2012-04-chicago.html
+URL:http://software-carpentry.org/bootcamps/2012-04-chicago.html
+LOCATION:University of Chicago
+GEO:41.7901128;-87.6007318
+END:VEVENT
+END:VCALENDAR

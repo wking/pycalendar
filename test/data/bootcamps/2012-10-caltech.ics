@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-10-caltech//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-10-caltech@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121023
+DTEND;VALUE=DATE:20121025
+SUMMARY:Caltech
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-10-caltech.html":http://software-carpentry.org/bootcamps/2012-10-caltech.html
+URL:http://software-carpentry.org/bootcamps/2012-10-caltech.html
+LOCATION:Caltech
+GEO:34.141411;-118.1249
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-10-newcastle//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-10-newcastle@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121022
+DTEND;VALUE=DATE:20121024
+SUMMARY:University of Newcastle
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-10-newcastle.html":http://software-carpentry.org/bootcamps/2012-10-newcastle.html
+URL:http://software-carpentry.org/bootcamps/2012-10-newcastle.html
+LOCATION:University of Newcastle
+GEO:54.980095;-1.6146142
+END:VEVENT
+END:VCALENDAR

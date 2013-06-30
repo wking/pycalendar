@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-11-whoi//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-11-whoi@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20131114
+DTEND;VALUE=DATE:20131116
+SUMMARY:Woods Hole Scientific Community
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-11-whoi.html":http://software-carpentry.org/bootcamps/2013-11-whoi.html
+URL:http://software-carpentry.org/bootcamps/2013-11-whoi.html
+LOCATION:Woods Hole Scientific Community
+GEO:41.526667;-70.663056
+END:VEVENT
+END:VCALENDAR

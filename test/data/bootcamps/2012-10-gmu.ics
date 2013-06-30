@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-10-gmu//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-10-gmu@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121025
+DTEND;VALUE=DATE:20121027
+SUMMARY:George Mason University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-10-gmu.html":http://software-carpentry.org/bootcamps/2012-10-gmu.html
+URL:http://software-carpentry.org/bootcamps/2012-10-gmu.html
+LOCATION:George Mason University
+GEO:38.831513;-77.308746
+END:VEVENT
+END:VCALENDAR

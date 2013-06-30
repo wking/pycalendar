@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-06-salk//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-06-salk@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130610
+DTEND;VALUE=DATE:20130612
+SUMMARY:Salk Institute
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-06-salk.html":http://software-carpentry.org/bootcamps/2013-06-salk.html
+URL:http://software-carpentry.org/bootcamps/2013-06-salk.html
+LOCATION:Salk Institute
+GEO:32.887151;-117.246212
+END:VEVENT
+END:VCALENDAR

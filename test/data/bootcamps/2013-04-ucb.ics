@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-04-ucb//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-04-ucb@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130413
+DTEND;VALUE=DATE:20130415
+SUMMARY:University of California Berkeley
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-04-ucb.html":http://software-carpentry.org/bootcamps/2013-04-ucb.html
+URL:http://software-carpentry.org/bootcamps/2013-04-ucb.html
+LOCATION:University of California Berkeley
+GEO:37.8695;-122.258949
+END:VEVENT
+END:VCALENDAR

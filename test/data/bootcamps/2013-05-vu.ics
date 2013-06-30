@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-vu//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-vu@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130502
+DTEND;VALUE=DATE:20130504
+SUMMARY:Vrije Universiteit\, Amsterdam
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-vu.html":http://software-carpentry.org/bootcamps/2013-05-vu.html
+URL:http://software-carpentry.org/bootcamps/2013-05-vu.html
+LOCATION:Vrije Universiteit\, Amsterdam
+GEO:52.33399;4.86305
+END:VEVENT
+END:VCALENDAR

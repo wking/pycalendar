@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-03-mbari//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-03-mbari@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120326
+DTEND;VALUE=DATE:20120328
+SUMMARY:Monterey Bay Aquarium Research Institute
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-03-mbari.html":http://software-carpentry.org/bootcamps/2012-03-mbari.html
+URL:http://software-carpentry.org/bootcamps/2012-03-mbari.html
+LOCATION:Monterey Bay Aquarium Research Institute
+GEO:36.802151;-121.788163
+END:VEVENT
+END:VCALENDAR

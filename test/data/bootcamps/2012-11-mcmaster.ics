@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-11-mcmaster//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-11-mcmaster@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121108
+DTEND;VALUE=DATE:20121110
+SUMMARY:McMaster University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-11-mcmaster.html":http://software-carpentry.org/bootcamps/2012-11-mcmaster.html
+URL:http://software-carpentry.org/bootcamps/2012-11-mcmaster.html
+LOCATION:McMaster University
+GEO:43.2613285;-79.9202476
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-11-unc//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-11-unc@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121128
+DTEND;VALUE=DATE:20121130
+SUMMARY:University of North Carolina
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-11-unc.html":http://software-carpentry.org/bootcamps/2012-11-unc.html
+URL:http://software-carpentry.org/bootcamps/2012-11-unc.html
+LOCATION:University of North Carolina
+GEO:34.2274248;-77.8791793
+END:VEVENT
+END:VCALENDAR

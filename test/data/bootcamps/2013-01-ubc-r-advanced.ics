@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-01-ubc-r-advanced//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-01-ubc-r-advanced@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130121
+DTEND;VALUE=DATE:20130123
+SUMMARY:University of British Columbia
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-01-ubc-r-advanced.html":http://software-carpentry.org/bootcamps/2013-01-ubc-r-advanced.html
+URL:http://software-carpentry.org/bootcamps/2013-01-ubc-r-advanced.html
+LOCATION:University of British Columbia
+GEO:49.2617149;-123.2534305
+END:VEVENT
+END:VCALENDAR

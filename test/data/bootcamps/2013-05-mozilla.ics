@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-mozilla//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-mozilla@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130509
+DTEND;VALUE=DATE:20130511
+SUMMARY:Mozilla Foundation (Toronto)
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-mozilla.html":http://software-carpentry.org/bootcamps/2013-05-mozilla.html
+URL:http://software-carpentry.org/bootcamps/2013-05-mozilla.html
+LOCATION:Mozilla Foundation (Toronto)
+GEO:43.64712;-79.39430
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-04-paris//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-04-paris@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130420
+DTEND;VALUE=DATE:20130422
+SUMMARY:Telecom ParisTech
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-04-paris.html":http://software-carpentry.org/bootcamps/2013-04-paris.html
+URL:http://software-carpentry.org/bootcamps/2013-04-paris.html
+LOCATION:Telecom ParisTech
+GEO:48.82629;2.34642
+END:VEVENT
+END:VCALENDAR

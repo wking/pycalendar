@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-07-bath//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-07-bath@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130715
+DTEND;VALUE=DATE:20130717
+SUMMARY:University of Bath
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-07-bath.html":http://software-carpentry.org/bootcamps/2013-07-bath.html
+URL:http://software-carpentry.org/bootcamps/2013-07-bath.html
+LOCATION:University of Bath
+GEO:51.3777431;-2.3263779
+END:VEVENT
+END:VCALENDAR

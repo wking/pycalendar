@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-01-stsci//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-01-stsci@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120118
+DTEND;VALUE=DATE:20120120
+SUMMARY:Space Telescope Science Institute
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-01-stsci.html":http://software-carpentry.org/bootcamps/2012-01-stsci.html
+URL:http://software-carpentry.org/bootcamps/2012-01-stsci.html
+LOCATION:Space Telescope Science Institute
+GEO:39.332604;-76.62319
+END:VEVENT
+END:VCALENDAR

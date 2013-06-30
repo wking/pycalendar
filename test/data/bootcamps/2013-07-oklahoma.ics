@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-07-oklahoma//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-07-oklahoma@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130701
+DTEND;VALUE=DATE:20130703
+SUMMARY:University of Oklahoma
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-07-oklahoma.html":http://software-carpentry.org/bootcamps/2013-07-oklahoma.html
+URL:http://software-carpentry.org/bootcamps/2013-07-oklahoma.html
+LOCATION:University of Oklahoma
+GEO:35.20859;-97.44566
+END:VEVENT
+END:VCALENDAR

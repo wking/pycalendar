@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-06-wise//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-06-wise@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130624
+DTEND;VALUE=DATE:20130626
+SUMMARY:Women in Science and Engineering (Boston)
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-06-wise.html":http://software-carpentry.org/bootcamps/2013-06-wise.html
+URL:http://software-carpentry.org/bootcamps/2013-06-wise.html
+LOCATION:Women in Science and Engineering (Boston)
+GEO:42.3625;-71.085
+END:VEVENT
+END:VCALENDAR

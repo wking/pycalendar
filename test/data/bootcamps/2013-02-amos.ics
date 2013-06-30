@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-02-amos//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-02-amos@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130214
+DTEND;VALUE=DATE:20130216
+SUMMARY:AMOS Conference (Melbourne)
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-02-amos.html":http://software-carpentry.org/bootcamps/2013-02-amos.html
+URL:http://software-carpentry.org/bootcamps/2013-02-amos.html
+LOCATION:AMOS Conference (Melbourne)
+GEO:-37.8253285;144.9516212
+END:VEVENT
+END:VCALENDAR

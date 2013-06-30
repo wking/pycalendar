@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-03-indiana//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-03-indiana@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120307
+DTEND;VALUE=DATE:20120309
+SUMMARY:Indiana University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-03-indiana.html":http://software-carpentry.org/bootcamps/2012-03-indiana.html
+URL:http://software-carpentry.org/bootcamps/2012-03-indiana.html
+LOCATION:Indiana University
+GEO:39.1663815;-86.526621
+END:VEVENT
+END:VCALENDAR

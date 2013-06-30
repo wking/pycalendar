@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-03-lbl//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-03-lbl@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130304
+DTEND;VALUE=DATE:20130308
+SUMMARY:Lawrence Berkeley National Laboratory
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-03-lbl.html":http://software-carpentry.org/bootcamps/2013-03-lbl.html
+URL:http://software-carpentry.org/bootcamps/2013-03-lbl.html
+LOCATION:Lawrence Berkeley National Laboratory
+GEO:37.8759281;-122.2500418
+END:VEVENT
+END:VCALENDAR

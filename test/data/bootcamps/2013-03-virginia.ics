@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-03-virginia//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-03-virginia@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130307
+DTEND;VALUE=DATE:20130309
+SUMMARY:University of Virginia
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-03-virginia.html":http://software-carpentry.org/bootcamps/2013-03-virginia.html
+URL:http://software-carpentry.org/bootcamps/2013-03-virginia.html
+LOCATION:University of Virginia
+GEO:38.031441;-78.499356
+END:VEVENT
+END:VCALENDAR

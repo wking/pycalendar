@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-05-michiganstate//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-05-michiganstate@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120507
+DTEND;VALUE=DATE:20120509
+SUMMARY:Michigan State University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-05-michiganstate.html":http://software-carpentry.org/bootcamps/2012-05-michiganstate.html
+URL:http://software-carpentry.org/bootcamps/2012-05-michiganstate.html
+LOCATION:Michigan State University
+GEO:42.7272884;-84.482106
+END:VEVENT
+END:VCALENDAR

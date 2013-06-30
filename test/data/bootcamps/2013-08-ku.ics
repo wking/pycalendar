@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-08-ku//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-08-ku@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130822
+DTEND;VALUE=DATE:20130824
+SUMMARY:University of Kansas
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-08-ku.html":http://software-carpentry.org/bootcamps/2013-08-ku.html
+URL:http://software-carpentry.org/bootcamps/2013-08-ku.html
+LOCATION:University of Kansas
+GEO:38.9584551;-95.2432842
+END:VEVENT
+END:VCALENDAR

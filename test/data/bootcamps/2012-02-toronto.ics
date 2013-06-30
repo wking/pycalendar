@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-02-toronto//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-02-toronto@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120223
+DTEND;VALUE=DATE:20120225
+SUMMARY:University of Toronto
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-02-toronto.html":http://software-carpentry.org/bootcamps/2012-02-toronto.html
+URL:http://software-carpentry.org/bootcamps/2012-02-toronto.html
+LOCATION:University of Toronto
+GEO:43.661476;-79.395189
+END:VEVENT
+END:VCALENDAR

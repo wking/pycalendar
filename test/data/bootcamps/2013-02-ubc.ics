@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-02-ubc//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-02-ubc@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130205
+DTEND;VALUE=DATE:20130207
+SUMMARY:University of British Columbia
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-02-ubc.html":http://software-carpentry.org/bootcamps/2013-02-ubc.html
+URL:http://software-carpentry.org/bootcamps/2013-02-ubc.html
+LOCATION:University of British Columbia
+GEO:49.2617149;-123.2534305
+END:VEVENT
+END:VCALENDAR

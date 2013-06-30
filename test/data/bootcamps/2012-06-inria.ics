@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-06-inria//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-06-inria@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120628
+DTEND;VALUE=DATE:20120630
+SUMMARY:INRIA Paris
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-06-inria.html":http://software-carpentry.org/bootcamps/2012-06-inria.html
+URL:http://software-carpentry.org/bootcamps/2012-06-inria.html
+LOCATION:INRIA Paris
+GEO:48.831673;2.355623
+END:VEVENT
+END:VCALENDAR

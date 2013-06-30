@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-01-vt//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-01-vt@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130131
+DTEND;VALUE=DATE:20130202
+SUMMARY:Virginia Tech
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-01-vt.html":http://software-carpentry.org/bootcamps/2013-01-vt.html
+URL:http://software-carpentry.org/bootcamps/2013-01-vt.html
+LOCATION:Virginia Tech
+GEO:37.2283843;-80.4234167
+END:VEVENT
+END:VCALENDAR

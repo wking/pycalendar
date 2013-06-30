@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-08-erdc//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-08-erdc@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130827
+DTEND;VALUE=DATE:20130830
+SUMMARY:US Army Engineer Research and Development Center
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-08-erdc.html":http://software-carpentry.org/bootcamps/2013-08-erdc.html
+URL:http://software-carpentry.org/bootcamps/2013-08-erdc.html
+LOCATION:US Army Engineer Research and Development Center
+GEO:32.3019199;-90.8733522
+END:VEVENT
+END:VCALENDAR

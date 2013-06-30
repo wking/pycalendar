@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-04-egi-forum//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-04-egi-forum@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130411
+DTEND;VALUE=DATE:20130412
+SUMMARY:EGI Forum\, Manchester
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-04-egi-forum.html":http://software-carpentry.org/bootcamps/2013-04-egi-forum.html
+URL:http://software-carpentry.org/bootcamps/2013-04-egi-forum.html
+LOCATION:EGI Forum\, Manchester
+GEO:53.467102;-2.233958
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-07-washington//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-07-washington@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130718
+DTEND;VALUE=DATE:20130720
+SUMMARY:University of Washington
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-07-washington.html":http://software-carpentry.org/bootcamps/2013-07-washington.html
+URL:http://software-carpentry.org/bootcamps/2013-07-washington.html
+LOCATION:University of Washington
+GEO:47.655;-122.303333
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-12-edinburgh//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-12-edinburgh@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121204
+DTEND;VALUE=DATE:20121206
+SUMMARY:University of Edinburgh
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-12-edinburgh.html":http://software-carpentry.org/bootcamps/2012-12-edinburgh.html
+URL:http://software-carpentry.org/bootcamps/2012-12-edinburgh.html
+LOCATION:University of Edinburgh
+GEO:55.9453279;-3.1911838
+END:VEVENT
+END:VCALENDAR

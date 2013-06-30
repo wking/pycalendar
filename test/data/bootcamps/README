@@ -1,0 +1,7 @@
+Give an example of processing while aggregating a number of calendard.
+The example data is a snapshot of the `Software Carpentry boot camp
+calendar`_, split into per-boot-camp calendars.
+
+
+.. _Software Carpentry boot camp calendar:
+   http://software-carpentry.org/bootcamps.ics 

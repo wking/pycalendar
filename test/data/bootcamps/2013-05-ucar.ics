@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-ucar//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-ucar@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130523
+DTEND;VALUE=DATE:20130525
+SUMMARY:NCAR
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-ucar.html":http://software-carpentry.org/bootcamps/2013-05-ucar.html
+URL:http://software-carpentry.org/bootcamps/2013-05-ucar.html
+LOCATION:NCAR
+GEO:40.03131;-105.2459
+END:VEVENT
+END:VCALENDAR

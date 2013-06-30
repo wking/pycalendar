@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-geomar//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-geomar@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130506
+DTEND;VALUE=DATE:20130508
+SUMMARY:GEOMAR (Kiel)
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-geomar.html":http://software-carpentry.org/bootcamps/2013-05-geomar.html
+URL:http://software-carpentry.org/bootcamps/2013-05-geomar.html
+LOCATION:GEOMAR (Kiel)
+GEO:54.32707;10.18265
+END:VEVENT
+END:VCALENDAR

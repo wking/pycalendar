@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-11-exeter//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-11-exeter@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20131112
+DTEND;VALUE=DATE:20131114
+SUMMARY:University of Exeter
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-11-exeter.html":http://software-carpentry.org/bootcamps/2013-11-exeter.html
+URL:http://software-carpentry.org/bootcamps/2013-11-exeter.html
+LOCATION:University of Exeter
+GEO:50.735788;-3.535033
+END:VEVENT
+END:VCALENDAR

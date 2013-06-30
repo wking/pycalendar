@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-01-waterloo//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-01-waterloo@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130112
+DTEND;VALUE=DATE:20130114
+SUMMARY:University of Waterloo
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-01-waterloo.html":http://software-carpentry.org/bootcamps/2013-01-waterloo.html
+URL:http://software-carpentry.org/bootcamps/2013-01-waterloo.html
+LOCATION:University of Waterloo
+GEO:43.4691285;-80.5398649
+END:VEVENT
+END:VCALENDAR

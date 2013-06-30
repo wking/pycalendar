@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-nescent//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-nescent@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130516
+DTEND;VALUE=DATE:20130518
+SUMMARY:NESCent
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-nescent.html":http://software-carpentry.org/bootcamps/2013-05-nescent.html
+URL:http://software-carpentry.org/bootcamps/2013-05-nescent.html
+LOCATION:NESCent
+GEO:36.00803;-78.92323
+END:VEVENT
+END:VCALENDAR

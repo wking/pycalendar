@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-06-dssg//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-06-dssg@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130604
+DTEND;VALUE=DATE:20130606
+SUMMARY:Data Science for Social Good\, U. of Chicago
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-06-dssg.html":http://software-carpentry.org/bootcamps/2013-06-dssg.html
+URL:http://software-carpentry.org/bootcamps/2013-06-dssg.html
+LOCATION:Data Science for Social Good\, U. of Chicago
+GEO:41.789722;-87.599722
+END:VEVENT
+END:VCALENDAR

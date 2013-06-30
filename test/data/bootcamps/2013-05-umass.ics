@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-umass//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-umass@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130523
+DTEND;VALUE=DATE:20130525
+SUMMARY:University of Massachusetts Amherst
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-umass.html":http://software-carpentry.org/bootcamps/2013-05-umass.html
+URL:http://software-carpentry.org/bootcamps/2013-05-umass.html
+LOCATION:University of Massachusetts Amherst
+GEO:42.388889;-72.527778
+END:VEVENT
+END:VCALENDAR

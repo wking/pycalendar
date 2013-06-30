@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-06-jhu//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-06-jhu@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120618
+DTEND;VALUE=DATE:20120620
+SUMMARY:Johns Hopkins University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-06-jhu.html":http://software-carpentry.org/bootcamps/2012-06-jhu.html
+URL:http://software-carpentry.org/bootcamps/2012-06-jhu.html
+LOCATION:Johns Hopkins University
+GEO:39.3275798;-76.6207579
+END:VEVENT
+END:VCALENDAR

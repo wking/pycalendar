@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-09-bristol//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-09-bristol@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130912
+DTEND;VALUE=DATE:20130914
+SUMMARY:University of Bristol
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-09-bristol.html":http://software-carpentry.org/bootcamps/2013-09-bristol.html
+URL:http://software-carpentry.org/bootcamps/2013-09-bristol.html
+LOCATION:University of Bristol
+GEO:51.457971;-2.601474
+END:VEVENT
+END:VCALENDAR

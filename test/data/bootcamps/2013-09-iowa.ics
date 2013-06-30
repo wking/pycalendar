@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-09-iowa//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-09-iowa@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130905
+DTEND;VALUE=DATE:20130907
+SUMMARY:University of Iowa
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-09-iowa.html":http://software-carpentry.org/bootcamps/2013-09-iowa.html
+URL:http://software-carpentry.org/bootcamps/2013-09-iowa.html
+LOCATION:University of Iowa
+GEO:41.66293;-91.56203
+END:VEVENT
+END:VCALENDAR

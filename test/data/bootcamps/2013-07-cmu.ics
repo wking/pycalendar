@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-07-cmu//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-07-cmu@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130727
+DTEND;VALUE=DATE:20130729
+SUMMARY:Carnegie Mellon University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-07-cmu.html":http://software-carpentry.org/bootcamps/2013-07-cmu.html
+URL:http://software-carpentry.org/bootcamps/2013-07-cmu.html
+LOCATION:Carnegie Mellon University
+GEO:40.443322;-79.943583
+END:VEVENT
+END:VCALENDAR

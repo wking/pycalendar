@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-01-tum//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-01-tum@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130122
+DTEND;VALUE=DATE:20130124
+SUMMARY:Technische Universitat Munchen
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-01-tum.html":http://software-carpentry.org/bootcamps/2013-01-tum.html
+URL:http://software-carpentry.org/bootcamps/2013-01-tum.html
+LOCATION:Technische Universitat Munchen
+GEO:48.264934;11.669121
+END:VEVENT
+END:VCALENDAR

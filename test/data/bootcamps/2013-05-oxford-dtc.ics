@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-oxford-dtc//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-oxford-dtc@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130509
+DTEND;VALUE=DATE:20130511
+SUMMARY:University of Oxford
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-oxford-dtc.html":http://software-carpentry.org/bootcamps/2013-05-oxford-dtc.html
+URL:http://software-carpentry.org/bootcamps/2013-05-oxford-dtc.html
+LOCATION:University of Oxford
+GEO:51.759865;-1.258648
+END:VEVENT
+END:VCALENDAR

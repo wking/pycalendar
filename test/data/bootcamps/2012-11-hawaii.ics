@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-11-hawaii//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-11-hawaii@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121130
+DTEND;VALUE=DATE:20121202
+SUMMARY:University of Hawaii
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-11-hawaii.html":http://software-carpentry.org/bootcamps/2012-11-hawaii.html
+URL:http://software-carpentry.org/bootcamps/2012-11-hawaii.html
+LOCATION:University of Hawaii
+GEO:21.3006615;-157.8191655
+END:VEVENT
+END:VCALENDAR

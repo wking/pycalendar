@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-06-sfu//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-06-sfu@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130606
+DTEND;VALUE=DATE:20130608
+SUMMARY:Simon Fraser University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-06-sfu.html":http://software-carpentry.org/bootcamps/2013-06-sfu.html
+URL:http://software-carpentry.org/bootcamps/2013-06-sfu.html
+LOCATION:Simon Fraser University
+GEO:49.276765;-122.917957
+END:VEVENT
+END:VCALENDAR

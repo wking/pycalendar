@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-03-utahstate//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-03-utahstate@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130323
+DTEND;VALUE=DATE:20130325
+SUMMARY:Utah State University
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-03-utahstate.html":http://software-carpentry.org/bootcamps/2013-03-utahstate.html
+URL:http://software-carpentry.org/bootcamps/2013-03-utahstate.html
+LOCATION:Utah State University
+GEO:41.7449488;-111.8042944
+END:VEVENT
+END:VCALENDAR

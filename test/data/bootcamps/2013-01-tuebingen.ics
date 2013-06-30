@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-01-tuebingen//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-01-tuebingen@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130125
+DTEND;VALUE=DATE:20130127
+SUMMARY:Max Planck Institute Tuebingen
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-01-tuebingen.html":http://software-carpentry.org/bootcamps/2013-01-tuebingen.html
+URL:http://software-carpentry.org/bootcamps/2013-01-tuebingen.html
+LOCATION:Max Planck Institute Tuebingen
+GEO:48.5369804;9.058935
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-ucdavis//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-ucdavis@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130513
+DTEND;VALUE=DATE:20130515
+SUMMARY:University of California Davis
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-ucdavis.html":http://software-carpentry.org/bootcamps/2013-05-ucdavis.html
+URL:http://software-carpentry.org/bootcamps/2013-05-ucdavis.html
+LOCATION:University of California Davis
+GEO:38.54926;-121.76709
+END:VEVENT
+END:VCALENDAR

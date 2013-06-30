@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-07-oslo//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-07-oslo@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130703
+DTEND;VALUE=DATE:20130705
+SUMMARY:University of Oslo
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-07-oslo.html":http://software-carpentry.org/bootcamps/2013-07-oslo.html
+URL:http://software-carpentry.org/bootcamps/2013-07-oslo.html
+LOCATION:University of Oslo
+GEO:59.9399586;10.7217496
+END:VEVENT
+END:VCALENDAR

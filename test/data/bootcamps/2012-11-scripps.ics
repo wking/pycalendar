@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-11-scripps//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-11-scripps@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121115
+DTEND;VALUE=DATE:20121117
+SUMMARY:Scripps Research Institute
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-11-scripps.html":http://software-carpentry.org/bootcamps/2012-11-scripps.html
+URL:http://software-carpentry.org/bootcamps/2012-11-scripps.html
+LOCATION:Scripps Research Institute
+GEO:32.8953297;-117.2421882
+END:VEVENT
+END:VCALENDAR

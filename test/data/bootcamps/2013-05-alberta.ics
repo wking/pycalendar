@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-05-alberta//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-05-alberta@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130530
+DTEND;VALUE=DATE:20130601
+SUMMARY:University of Alberta
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-05-alberta.html":http://software-carpentry.org/bootcamps/2013-05-alberta.html
+URL:http://software-carpentry.org/bootcamps/2013-05-alberta.html
+LOCATION:University of Alberta
+GEO:53.52345;-113.52600
+END:VEVENT
+END:VCALENDAR

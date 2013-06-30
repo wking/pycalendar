@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-11-wustl//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-11-wustl@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20121110
+DTEND;VALUE=DATE:20121112
+SUMMARY:Washington University in St. Louis
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-11-wustl.html":http://software-carpentry.org/bootcamps/2012-11-wustl.html
+URL:http://software-carpentry.org/bootcamps/2012-11-wustl.html
+LOCATION:Washington University in St. Louis
+GEO:38.6480562;-90.3050959
+END:VEVENT
+END:VCALENDAR

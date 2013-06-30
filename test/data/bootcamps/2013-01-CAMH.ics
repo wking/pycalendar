@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2013-01-CAMH//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2013-01-CAMH@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20130124
+DTEND;VALUE=DATE:20130126
+SUMMARY:Centre for Addiction and Mental Health
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-01-CAMH.html":http://software-carpentry.org/bootcamps/2013-01-CAMH.html
+URL:http://software-carpentry.org/bootcamps/2013-01-CAMH.html
+LOCATION:Centre for Addiction and Mental Health
+GEO:43.6471184;-79.3942998
+END:VEVENT
+END:VCALENDAR

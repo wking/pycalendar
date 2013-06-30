@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Software Carpentry/2012-07-utsc//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:2012-07-utsc@software-carpentry.org
+DTSTAMP:2013-06-29T00:36:51Z
+DTSTART;VALUE=DATE:20120719
+DTEND;VALUE=DATE:20120721
+SUMMARY:University of Toronto (Scarborough)
+DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2012-07-utsc.html":http://software-carpentry.org/bootcamps/2012-07-utsc.html
+URL:http://software-carpentry.org/bootcamps/2012-07-utsc.html
+LOCATION:University of Toronto (Scarborough)
+GEO:43.7835514;-79.1863972
+END:VEVENT
+END:VCALENDAR
