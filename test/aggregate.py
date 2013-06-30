@@ -7,7 +7,7 @@
 This script grabs all the ``.ics`` files in the ``test/`` directory
 and aggregates them into a single iCalendar feed.  While it's doing
 this, it also prints and geographic positions to stderr.  In a live
-site, you could use a different version of ``get_geo`` to build
+site, you could use a different version of ``add_event`` to build
 javascript that renders a map showing event locations.
 """
 
@@ -18,11 +18,18 @@ import pycalendar.aggregator as _pycalendar_aggregator
 import pycalendar.feed as _pycalendar_feed
 
 
-def get_geo(feed):
-    for event in feed['VEVENT']:
+class Map (list):
+    def __init__(self, stream=_sys.stderr):
+        self.stream = stream
+
+    def add_feed(self, feed):
+        for event in feed['VEVENT']:
+            self.add_event(event=event)
+
+    def add_event(self, event):
         if 'GEO' in event:
             lat,lon = [float(x) for x in event['GEO'].split(';')]
-            _sys.stderr.write('{} at lat {}, lon {}\n'.format(
+            self.stream.write('{} at lat {}, lon {}\n'.format(
                 event['UID'], lat, lon))
 
 
@@ -35,17 +42,17 @@ def get_urls(root=_os.path.dirname(__file__)):
                 yield 'file://{}'.format(path.replace(_os.sep, '/'))
 
 
-def aggregate():
+def aggregate(**kwargs):
     aggregator = _pycalendar_aggregator.Aggregator(
         prodid='-//pycalendar//NONSGML testing//EN',
         feeds=[_pycalendar_feed.Feed(url=url)
                for url in get_urls()],
-        processors=[get_geo],
-        )
+        **kwargs)
     aggregator.fetch()
     return aggregator
 
 
 if __name__ == '__main__':
-    aggregator = aggregate()
+    geomap = Map()
+    aggregator = aggregate(processors=[geomap.add_feed])
     aggregator.write(stream=_sys.stdout)
