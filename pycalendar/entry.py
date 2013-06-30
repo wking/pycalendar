@@ -80,9 +80,8 @@ class Entry (dict):
     'VEVENT'
     >>> event.content  # doctest: +ELLIPSIS
     'BEGIN:VEVENT\r\nUID:...\r\nEND:VEVENT\r\n'
-    >>> sorted(event.keys())  # doctest: +NORMALIZE_WHITESPACE
-    ['DTEND;VALUE=DATE', 'DTSTAMP', 'DTSTART;VALUE=DATE', 'GEO',
-     'LOCATION', 'SUMMARY', 'UID', 'URL']
+    >>> sorted(event.keys())
+    ['DTEND', 'DTSTAMP', 'DTSTART', 'GEO', 'LOCATION', 'SUMMARY', 'UID', 'URL']
 
     >>> event['LOCATION']
     'Snow Hill\\, Dover\\, Massachusetts'
@@ -137,7 +136,7 @@ class Entry (dict):
         stack = []
         child_lines = []
         for i,line in enumerate(self._lines[1:-1]):
-            key,value = [x.strip() for x in line.split(':', 1)]
+            key,parameters,value = self._parse_key_value(line)
             if key == 'BEGIN':
                 _LOG.debug('{!r}: begin {}'.format(self, value))
                 stack.append(value)
@@ -166,6 +165,20 @@ class Entry (dict):
                         raise NotImplementedError(
                             'cannot parse VERSION {} feed'.format(v))
                 self._add_value(key=key, value=value)
+
+    def _parse_key_value(self, line):
+        key,value = [x.strip() for x in line.split(':', 1)]
+        parameters = key.split(';')
+        key = parameters.pop(0)
+        parameters = {tuple(x.split('=', 1)) for x in parameters}
+        for k,v in parameters:
+            if ',' in v:
+                parameters = v.split(',')
+        if parameters and key in ['BEGIN', 'END']:
+            raise ValueError(
+                'parameters are not allowed with {}: {}'.format(
+                    key, line))
+        return (key, parameters, value)
 
     def _add_value(self, key, value, force_list=False):
         if force_list and key not in self:
