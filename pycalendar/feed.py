@@ -11,24 +11,13 @@ class Feed (object):
 
     We can't fetch this dummy url, so load the content by hand.
 
-    >>> f.content = '\r\n'.join([
-    ...         'BEGIN:VCALENDAR',
-    ...         'VERSION:2.0',
-    ...         'PRODID:-//Example Calendar//NONSGML v1.0//EN',
-    ...         'BEGIN:VEVENT',
-    ...         'UID:2013-06-30@geohash.invalid',
-    ...         'DTSTAMP:2013-06-30T00:00:00Z',
-    ...         'DTSTART;VALUE=DATE:20130630',
-    ...         'DTEND;VALUE=DATE:20130701',
-    ...         'SUMMARY:XKCD geohashing, Boston graticule',
-    ...         'URL:http://xkcd.com/426/',
-    ...         'LOCATION:Snow Hill, Dover, Massachusetts',
-    ...         'GEO:42.226663,-71.28676',
-    ...         'END:VEVENT',
-    ...         'END:VCALENDAR',
-    ...         '',
-    ...         ])
-    >>> print(f)
+    >>> import os
+    >>> root_dir = os.curdir
+    >>> data_file = os.path.join(os.curdir, 'test', 'data', 'geohash.ics')
+    >>> with open(data_file, 'r') as data:
+    ...     f.content = data.read().replace('\n', data.newlines)
+    ...     assert data.newlines == '\r\n', data.newlines
+    >>> print(f)  # doctest: +REPORT_UDIFF
     BEGIN:VCALENDAR
     VERSION:2.0
     PRODID:-//Example Calendar//NONSGML v1.0//EN
@@ -37,9 +26,9 @@ class Feed (object):
     DTSTAMP:2013-06-30T00:00:00Z
     DTSTART;VALUE=DATE:20130630
     DTEND;VALUE=DATE:20130701
-    SUMMARY:XKCD geohashing, Boston graticule
+    SUMMARY:XKCD geohashing\, Boston graticule
     URL:http://xkcd.com/426/
-    LOCATION:Snow Hill, Dover, Massachusetts
+    LOCATION:Snow Hill\, Dover\, Massachusetts
     GEO:42.226663,-71.28676
     END:VEVENT
     END:VCALENDAR
