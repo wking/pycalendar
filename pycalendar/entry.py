@@ -69,6 +69,13 @@ class Entry (dict):
             self.process()
 
     def __hash__(self):
+        if self.type in [
+                'VEVENT',
+                'VFREEBUSY',
+                'VJOURNAL',
+                'VTODO',
+                ] or 'UID' in self:
+            return hash(_text.unescape(self['UID']))
         return id(self)
 
     def __str__(self):
