@@ -1,2 +1,2 @@
 include COPYING
-recursive-include test README *.ics
+recursive-include test README *.py *.ics
