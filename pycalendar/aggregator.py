@@ -14,15 +14,22 @@ class Aggregator (list):
 
     >>> from .feed import Feed
 
+    You can set processing hooks to analyze and manipulate feeds as
+    they come in.
+
+    >>> processors = [lambda feed: print("I'm processing {!r}".format(feed))]
+
     >>> a = Aggregator(
     ...     prodid='-//pycalendar//NONSGML testing//EN',
     ...     feeds=[
     ...         Feed(url='{}/{}'.format(base_url, name))
     ...         for name in ['geohash.ics',]],
+    ...     processors=processors,
     ...     )
     >>> a  # doctest: +ELLIPSIS
     [<Feed url:file://.../test/data/geohash.ics>]
-    >>> a.fetch()
+    >>> a.fetch()  # doctest: +ELLIPSIS
+    I'm processing <Feed url:file://.../test/data/geohash.ics>
 
     Generate aggregate calendars with the ``.write`` method.
 
@@ -49,16 +56,21 @@ class Aggregator (list):
     END:VCALENDAR
     <BLANKLINE>
     """
-    def __init__(self, prodid, version='2.0', feeds=None):
+    def __init__(self, prodid, version='2.0', feeds=None, processors=None):
         super(Aggregator, self).__init__()
         self.prodid = prodid
         self.version = version
         if feeds:
             self.extend(feeds)
+        if not processors:
+            processors = []
+        self.processors = processors
 
     def fetch(self):
         for feed in self:
             feed.fetch()
+            for processor in self.processors:
+                processor(feed)
 
     def write(self, stream):
         stream.write('BEGIN:VCALENDAR\r\n')
