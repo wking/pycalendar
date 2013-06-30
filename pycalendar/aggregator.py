@@ -80,6 +80,12 @@ class Aggregator (list):
         stream.write('VERSION:{}\r\n'.format(_text.escape(self.version)))
         stream.write('PRODID:{}\r\n'.format(_text.escape(self.prodid)))
         for feed in self:
-            for entry in feed:
-                entry.write(stream=stream)
+            for key in [
+                    'VEVENT',
+                    'VFREEBUSY',
+                    'VJOURNAL',
+                    'VTODO',
+                    ]:
+                for entry in feed.get(key, []):
+                    entry.write(stream=stream)
         stream.write('END:VCALENDAR\r\n')

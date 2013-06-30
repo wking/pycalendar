@@ -10,7 +10,7 @@ from . import entry as _entry
 _LOG = _logging.getLogger(__name__)
 
 
-class Feed (set):
+class Feed (_entry.Entry):
     r"""An iCalendar feed (:RFC:`5545`)
 
     Figure out where the example feed is located, relative to the
@@ -65,7 +65,7 @@ class Feed (set):
 
     You can also iterate through events:
 
-    >>> for event in f:
+    >>> for event in f['VEVENT']:
     ...     print(repr(event))
     ...     print(event)
     <Entry type:VEVENT>
@@ -80,18 +80,12 @@ class Feed (set):
     GEO:42.226663,-71.28676
     END:VEVENT
     """
-    def __init__(self, url, content=None, user_agent=None):
-        super(Feed, self).__init__()
+    def __init__(self, url, user_agent=None):
+        super(Feed, self).__init__(type='VCALENDAR')
         self.url = url
-        self.content = content
         if user_agent is None:
             user_agent = _USER_AGENT
         self.user_agent = user_agent
-
-    def __str__(self):
-        if self.content:
-            return self.content.replace('\r\n', '\n').strip()
-        return ''
 
     def __repr__(self):
         return '<{} url:{}>'.format(type(self).__name__, self.url)
@@ -115,38 +109,3 @@ class Feed (set):
                 raise ValueError(content_type)
             byte_content = f.read()
         self.content = str(byte_content, encoding='UTF-8')
-
-    def process(self):
-        _LOG.info('{!r}: processing {} content characters'.format(
-            self, len(self.content)))
-        entry = None
-        stack = []
-        for i,line in enumerate(self.content.splitlines()):
-            if line.startswith('BEGIN:'):
-                _type = line.split(':', 1)[1]
-                _LOG.info('{!r}: begin {}'.format(self, _type))
-                stack.append(_type)
-                if len(stack) == 2:
-                    if entry is not None:
-                        raise ValueError('double entry by line {}'.format(i))
-                    entry = _entry.Entry(type=_type, content=[])
-            _LOG.info(stack)
-            if entry is not None:
-                entry.content.append(line)
-            if line.startswith('END:'):
-                _type = line.split(':', 1)[1]
-                _LOG.info('{!r}: end {}'.format(self, _type))
-                if not stack or _type != stack[-1]:
-                    raise ValueError(
-                        ('closing {} on line {}, but current stack is {}'
-                         ).format(_type, i, stack))
-                stack.pop(-1)
-                if len(stack) == 1:
-                    entry.content.append('')  # trailing blankline
-                    entry.content = '\r\n'.join(entry.content)
-                    entry.process()
-                    self.add(entry)
-                    entry = None
-
-    def write(self, stream):
-        stream.write(self.content)
