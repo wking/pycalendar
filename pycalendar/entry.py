@@ -8,7 +8,7 @@ from . import text as _text
 _LOG = _logging.getLogger(__name__)
 
 
-class Entry (object):
+class Entry (dict):
     r"""An iCalendar entry (e.g. VEVENT)
 
     Get an entry.
@@ -44,10 +44,19 @@ class Entry (object):
     >>> entry.content  # doctest: +ELLIPSIS
     'BEGIN:VEVENT\r\nUID:...\r\nEND:VEVENT\r\n'
 
-    Use the ``.get*()`` methods to access individual fields.
+    ``Entry`` subclasses Python's ``dict``, so you can access raw
+    field values in the usual ways.
 
+    >>> entry['LOCATION']
+    'Snow Hill\\, Dover\\, Massachusetts'
     >>> entry.get('LOCATION')
     'Snow Hill\\, Dover\\, Massachusetts'
+    >>> entry.get('missing')
+    >>> entry.get('missing', 'some default')
+    'some default'
+
+    You can also use ``get_text`` to unescape text fields.
+
     >>> entry.get_text('LOCATION')
     'Snow Hill, Dover, Massachusetts'
     """
@@ -59,6 +68,9 @@ class Entry (object):
         if content:
             self.process()
 
+    def __hash__(self):
+        return id(self)
+
     def __str__(self):
         if self.content:
             return self.content.replace('\r\n', '\n').strip()
@@ -68,7 +80,28 @@ class Entry (object):
         return '<{} type:{}>'.format(type(self).__name__, self.type)
 
     def process(self):
+        self.clear()
         self.unfold()
+        self._fill_dict()
+
+    def _fill_dict(self):
+        for index,verb,expected in [
+                [0, 'begin', 'BEGIN:{}'.format(self.type)],
+                [-1, 'end', 'END:{}'.format(self.type)],
+                ]:
+            if self.lines[index] != expected:
+                raise ValueError('entry should {} with {!r}, not {!r}'.format(
+                    verb, expected, self.lines[index]))
+        for line in self.lines[1:-1]:
+            key,value = [x.strip() for x in line.split(':', 1)]
+            if key in ['BEGIN' or 'END']:
+                raise NotImplementedError(line)
+            if key in self:
+                if type(self[key]) == str:
+                    self[key] = [self[key]]
+                self[key].append(value)
+            else:
+                self[key] = value
 
     def unfold(self):
         """Unfold wrapped lines
@@ -91,20 +124,6 @@ class Entry (object):
                 semantic_line_chunks = [line]
         if semantic_line_chunks:
             self.lines.append(''.join(semantic_line_chunks))
-
-    def get(self, key, **kwargs):
-        for k in kwargs.keys():
-            if k != 'default':
-                raise TypeError(
-                    'get() got an unexpected keyword argument {!r}'.format(
-                        k))
-        for line in self.lines:
-            k,value = [x.strip() for x in line.split(':', 1)]
-            if k == key:
-                return value
-        if 'default' in kwargs:
-            return kwargs['default']
-        raise KeyError(key)
 
     def get_text(self, *args, **kwargs):
         value = self.get(*args, **kwargs)

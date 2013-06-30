@@ -127,11 +127,11 @@ class Feed (set):
                 _LOG.info('{!r}: begin {}'.format(self, _type))
                 stack.append(_type)
                 if len(stack) == 2:
-                    if entry:
+                    if entry is not None:
                         raise ValueError('double entry by line {}'.format(i))
                     entry = _entry.Entry(type=_type, content=[])
             _LOG.info(stack)
-            if entry:
+            if entry is not None:
                 entry.content.append(line)
             if line.startswith('END:'):
                 _type = line.split(':', 1)[1]
