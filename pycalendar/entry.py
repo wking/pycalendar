@@ -207,5 +207,15 @@ class Entry (dict):
         value = self.get(*args, **kwargs)
         return _text.unescape(value)
 
+    def get_geo(self, key='GEO', *args, **kwargs):
+        """Get and unescape a GEO value
+
+        As described in :RFC:`5545`, section 3.8.1.6 (Geographic
+        Position).
+        """
+        value = self.get(key, *args, **kwargs)
+        lat,lon = [float(x) for x in value.split(';')]
+        return (lat, lon)
+
     def write(self, stream):
         stream.write(self.content)

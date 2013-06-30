@@ -42,7 +42,7 @@ class Map (list):
 
     def add_event(self, event):
         if 'GEO' in event:
-            lat,lon = [float(x) for x in event['GEO'].split(';')]
+            lat,lon = event.get_geo()
             self.stream.write('{} at lat {}, lon {}\n'.format(
                 event['UID'], lat, lon))
 
