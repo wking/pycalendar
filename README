@@ -1,1 +1,21 @@
 Flexible aggregation for iCalendar feeds (:RFC:`5545`).
+
+The iCalender standard provides a common format for exchanging
+calendar information.  This project aims to provide a library with a
+clean API for aggregating and processing iCalendar feeds.  What you do
+with that processed information is up to you.
+
+There are a number of existing aggregators, ranging from the
+closed-source `Google Calendar`_ to the open-source elmcity_ and
+Calagator_.  However, I want a library that can work as an iCalendar
+version of feedparser_, and `code for a web-frontend`__ is just dead
+weight.
+
+__ `elmcity code`_
+
+
+.. _Calagator: http://calagator.org/
+.. _elmcity: http://elmcity.cloudapp.net/
+.. _elmcity code: https://github.com/judell/elmcity
+.. _feedparser: https://pypi.python.org/pypi/feedparser/
+.. _Google Calendar: https://support.google.com/calendar/
