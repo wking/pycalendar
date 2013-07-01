@@ -58,7 +58,7 @@ class Feed (_entry.Entry):
     PRODID:-//Example Calendar//NONSGML v1.0//EN
     BEGIN:VEVENT
     UID:2013-06-30@geohash.invalid
-    DTSTAMP:2013-06-30T00:00:00Z
+    DTSTAMP:20130630T000000Z
     DTSTART;VALUE=DATE:20130630
     DTEND;VALUE=DATE:20130701
     SUMMARY:XKCD geohashing\, Boston graticule
@@ -85,7 +85,7 @@ class Feed (_entry.Entry):
     <Entry type:VEVENT>
     BEGIN:VEVENT
     UID:2013-06-30@geohash.invalid
-    DTSTAMP:2013-06-30T00:00:00Z
+    DTSTAMP:20130630T000000Z
     DTSTART;VALUE=DATE:20130630
     DTEND;VALUE=DATE:20130701
     SUMMARY:XKCD geohashing\, Boston graticule

@@ -62,7 +62,7 @@ class Aggregator (list):
     PRODID:-//pycalendar//NONSGML testing//EN
     BEGIN:VEVENT
     UID:2013-06-30@geohash.invalid
-    DTSTAMP:2013-06-30T00:00:00Z
+    DTSTAMP:20130630T000000Z
     DTSTART;VALUE=DATE:20130630
     DTEND;VALUE=DATE:20130701
     SUMMARY:XKCD geohashing\, Boston graticule
