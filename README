@@ -1,4 +1,4 @@
-Flexible aggregation for iCalendar feeds (:RFC:`5545`).
+Flexible aggregation for iCalendar feeds (`RFC 5545`_).
 
 The iCalender standard provides a common format for exchanging
 calendar information.  This project aims to provide a library with a
@@ -45,3 +45,5 @@ to stdout and geographic positions to stderr.  Run it with::
 .. _Google Calendar: https://support.google.com/calendar/
 .. _nose: https://nose.readthedocs.org/en/latest/
 .. _pytz: https://pypi.python.org/pypi/pytz/
+
+.. _RFC 5545: http://tools.ietf.org/html/rfc5545
