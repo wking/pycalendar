@@ -1,2 +1,2 @@
-include COPYING
+include AUTHORS COPYING
 recursive-include test README *.py *.ics
