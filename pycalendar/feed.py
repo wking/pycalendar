@@ -14,17 +14,20 @@
 # You should have received a copy of the GNU General Public License along with
 # pycalender.  If not, see <http://www.gnu.org/licenses/>.
 
+import codecs as _codecs
 import logging as _logging
 import urllib.request as _urllib_request
 
 from . import USER_AGENT as _USER_AGENT
-from . import entry as _entry
+from . import property as _property
+from . import unfold as _unfold
+from .component import calendar as _calendar
 
 
 _LOG = _logging.getLogger(__name__)
 
 
-class Feed (_entry.Entry):
+class Feed (_calendar.Calendar):
     r"""An iCalendar feed (:RFC:`5545`)
 
     Figure out where the example feed is located, relative to the
@@ -42,8 +45,6 @@ class Feed (_entry.Entry):
     >>> f = Feed(url=url)
     >>> f  # doctest: +ELLIPSIS
     <Feed url:file://.../test/data/geohash.ics>
-    >>> print(f)
-    <BLANKLINE>
 
     Load the feed content.
 
@@ -54,17 +55,17 @@ class Feed (_entry.Entry):
 
     >>> print(f)  # doctest: +REPORT_UDIFF
     BEGIN:VCALENDAR
-    VERSION:2.0
     PRODID:-//Example Calendar//NONSGML v1.0//EN
+    VERSION:2.0
     BEGIN:VEVENT
-    UID:2013-06-30@geohash.invalid
     DTSTAMP:20130630T000000Z
+    UID:2013-06-30@geohash.invalid
     DTSTART;VALUE=DATE:20130630
-    DTEND;VALUE=DATE:20130701
+    GEO:42.226663;-71.286760
+    LOCATION:Snow Hill\, Dover\, Massachusetts
     SUMMARY:XKCD geohashing\, Boston graticule
     URL:http://xkcd.com/426/
-    LOCATION:Snow Hill\, Dover\, Massachusetts
-    GEO:42.226663;-71.28676
+    DTEND;VALUE=DATE:20130701
     END:VEVENT
     END:VCALENDAR
 
@@ -75,23 +76,24 @@ class Feed (_entry.Entry):
     >>> stream = io.StringIO()
     >>> f.write(stream=stream)
     >>> stream.getvalue()  # doctest: +ELLIPSIS
-    'BEGIN:VCALENDAR\r\nVERSION:2.0\r\n...END:VCALENDAR\r\n'
+    'BEGIN:VCALENDAR\r\nPRODID:...END:VCALENDAR\r\n'
 
     You can also iterate through events:
 
     >>> for event in f['VEVENT']:
     ...     print(repr(event))
     ...     print(event)
-    <Entry type:VEVENT>
+    ... # doctest: +ELLIPSIS, +REPORT_UDIFF
+    <Event name:VEVENT at 0x...>
     BEGIN:VEVENT
-    UID:2013-06-30@geohash.invalid
     DTSTAMP:20130630T000000Z
+    UID:2013-06-30@geohash.invalid
     DTSTART;VALUE=DATE:20130630
-    DTEND;VALUE=DATE:20130701
+    GEO:42.226663;-71.286760
+    LOCATION:Snow Hill\, Dover\, Massachusetts
     SUMMARY:XKCD geohashing\, Boston graticule
     URL:http://xkcd.com/426/
-    LOCATION:Snow Hill\, Dover\, Massachusetts
-    GEO:42.226663;-71.28676
+    DTEND;VALUE=DATE:20130701
     END:VEVENT
     """
     def __init__(self, url, user_agent=None):
@@ -102,14 +104,11 @@ class Feed (_entry.Entry):
         self.user_agent = user_agent
 
     def __repr__(self):
-        return '<{} url:{}>'.format(type(self).__name__, self.url)
+        return '<{}.{} url:{}>'.format(
+            self.__module__, type(self).__name__, self.url)
 
-    def fetch(self, force=False):
-        if self.content is None or force:
-            self._fetch()
-            self.process()
-
-    def _fetch(self):
+    def fetch(self):
+        self.clear()
         request = _urllib_request.Request(
             url=self.url,
             headers={
@@ -121,5 +120,16 @@ class Feed (_entry.Entry):
             content_type = info.get('Content-type', None)
             if content_type != 'text/calendar':
                 raise ValueError(content_type)
-            byte_content = f.read()
-        self.content = str(byte_content, encoding='UTF-8')
+            codec = _codecs.lookup('UTF-8')
+            with codec.streamreader(stream=f) as stream:
+                self.parse(stream=stream)
+
+    def parse(self, stream):
+        lines = _unfold.unfold(stream=stream)
+        line = next(lines)
+        prop = _property.parse(line=line)
+        if prop.name != 'BEGIN' or prop.value != self.name:
+            raise ValueError(
+                "stream {} must start with 'BEGIN:VCALENDAR', not {!r}".format(
+                    stream, line))
+        self.read(lines=lines)

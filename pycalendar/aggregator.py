@@ -14,7 +14,9 @@
 # You should have received a copy of the GNU General Public License along with
 # pycalender.  If not, see <http://www.gnu.org/licenses/>.
 
-from . import text as _text
+
+from .component import calendar as _component_calendar
+from .property import calendar as _property_calendar
 
 
 class Aggregator (list):
@@ -55,28 +57,30 @@ class Aggregator (list):
     >>> a.write(stream=stream)
     >>> value = stream.getvalue()
     >>> value  # doctest: +ELLIPSIS
-    'BEGIN:VCALENDAR\r\nVERSION:2.0\r\n...END:VCALENDAR\r\n'
-    >>> print(value.replace('\r\n', '\n'))
+    'BEGIN:VCALENDAR\r\nPRODID:...END:VCALENDAR\r\n'
+    >>> print(value.replace('\r\n', '\n'))  # doctest: +REPORT_UDIFF
     BEGIN:VCALENDAR
-    VERSION:2.0
     PRODID:-//pycalendar//NONSGML testing//EN
+    VERSION:2.0
     BEGIN:VEVENT
-    UID:2013-06-30@geohash.invalid
     DTSTAMP:20130630T000000Z
+    UID:2013-06-30@geohash.invalid
     DTSTART;VALUE=DATE:20130630
-    DTEND;VALUE=DATE:20130701
+    GEO:42.226663;-71.286760
+    LOCATION:Snow Hill\, Dover\, Massachusetts
     SUMMARY:XKCD geohashing\, Boston graticule
     URL:http://xkcd.com/426/
-    LOCATION:Snow Hill\, Dover\, Massachusetts
-    GEO:42.226663;-71.28676
+    DTEND;VALUE=DATE:20130701
     END:VEVENT
     END:VCALENDAR
     <BLANKLINE>
     """
     def __init__(self, prodid, version='2.0', feeds=None, processors=None):
         super(Aggregator, self).__init__()
-        self.prodid = prodid
-        self.version = version
+        self.calendar = _component_calendar.Calendar()
+        self.calendar.add_property(_property_calendar.Version(value=version))
+        self.calendar.add_property(
+            _property_calendar.ProductIdentifier(value=prodid))
         if feeds:
             self.extend(feeds)
         if not processors:
@@ -88,18 +92,11 @@ class Aggregator (list):
             feed.fetch()
             for processor in self.processors:
                 processor(feed)
+            for name in feed.subcomponents:
+                if name not in self.calendar:
+                    self.calendar[name] = []
+                for component in feed.get(name, []):
+                    self.calendar[name].append(component)
 
     def write(self, stream):
-        stream.write('BEGIN:VCALENDAR\r\n')
-        stream.write('VERSION:{}\r\n'.format(_text.escape(self.version)))
-        stream.write('PRODID:{}\r\n'.format(_text.escape(self.prodid)))
-        for feed in self:
-            for key in [
-                    'VEVENT',
-                    'VFREEBUSY',
-                    'VJOURNAL',
-                    'VTODO',
-                    ]:
-                for entry in feed.get(key, []):
-                    entry.write(stream=stream)
-        stream.write('END:VCALENDAR\r\n')
+        self.calendar.write(stream=stream)

@@ -22,6 +22,8 @@ As defined in :RFC:`5545`, section 3.3.11 (Text).
 import logging as _logging
 import re as _re
 
+from . import base as _base
+
 
 _LOG = _logging.getLogger(__name__)
 
@@ -117,3 +119,19 @@ def unescape(text):
     """
     return _UNESCAPE_REGEXP.subn(
         repl=_unescape_replacer, string=text)[0]
+
+
+class Text (_base.DataType):
+    name = 'TEXT'
+
+    @classmethod
+    def decode(cls, property, value):
+        return unescape(text=value)
+
+    @classmethod
+    def encode(cls, property, value):
+        return escape(text=value)
+
+
+class UniversalResourceLocator (Text):
+    name = 'URI'

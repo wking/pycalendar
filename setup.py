@@ -55,6 +55,11 @@ setup(
         'Topic :: Office/Business :: Scheduling',
         'Topic :: Software Development :: Libraries :: Python Modules',
         ],
-    packages=[_name],
+    packages=[
+        _name,
+        '{}.component'.format(_name),
+        '{}.dtype'.format(_name),
+        '{}.property'.format(_name),
+        ],
     provides=[_name],
     )

@@ -22,7 +22,7 @@ the usual ways.  Any of the following should work::
   $ python setup.py install
   $ pip install pycalendar
 
-There are no dependencies outside Python's standard library.
+The only dependency outside Python's standard library is pytz_.
 
 Testing
 =======
@@ -44,3 +44,4 @@ to stdout and geographic positions to stderr.  Run it with::
 .. _feedparser: https://pypi.python.org/pypi/feedparser/
 .. _Google Calendar: https://support.google.com/calendar/
 .. _nose: https://nose.readthedocs.org/en/latest/
+.. _pytz: https://pypi.python.org/pypi/pytz/
