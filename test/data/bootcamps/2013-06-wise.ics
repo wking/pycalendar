@@ -11,5 +11,31 @@ DESCRIPTION;ALTREP="http://software-carpentry.org/bootcamps/2013-06-wise.html":h
 URL:http://software-carpentry.org/bootcamps/2013-06-wise.html
 LOCATION:Women in Science and Engineering (Boston)
 GEO:42.3625;-71.085
+ORGANIZER;CN=Greg Wilson:mailto:gw@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Tracy Teal:mailto:tt@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Adina Chuang Howe:mailto:ach@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Caitlyn Pickens:mailto:cp@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Sheeri K. Cabral:mailto:skc@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Jessica McKellar:mailto:jm@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Sarah Supp:mailto:ss@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Nelle Varoquaux:mailto:nv@example.invalid
+ATTENDEE;ROLE=X-INSTRUCTOR;CN=Aleksandra Pawlik:mailto:ap@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Sharon Dobbs:mailto:sd@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Victoria Goldberg:mailto:vg@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Sanjana Panjnani:mailto:sp@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Elenita Silverstein:mailto:es@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Elena Yatzeck:mailto:ey@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Wei Le:mailto:wl@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Emily Chen:mailto:ec@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Sabiha Imran:mailto:si@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Sophia Clay:mailto:sc@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Deepa Mathew:mailto:dm@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Alina Shah:mailto:as@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Martina Sturdikova:mailto:ms@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Terri Yu:mailto:ty@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Amy Rich:mailto:ar@example.invalid
+ATTENDEE;ROLE=X-HELPER;CN=Kate Silverstein:mailto:ks@example.invalid
+X-EVENTBRITE:6181177067
+X-STATUS:OPEN
 END:VEVENT
 END:VCALENDAR
