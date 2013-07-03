@@ -9,9 +9,22 @@ There are a number of existing aggregators, ranging from the
 closed-source `Google Calendar`_ to the open-source elmcity_ and
 Calagator_.  However, I want a library that can work as an iCalendar
 version of feedparser_, and `code for a web-frontend`__ is just dead
-weight.
+weight.  It turns out that elmcity uses the icalendar_ parsing
+library, and there are a number of other pre-existing libraries:
 
-__ `elmcity code`_
+icalendar_:
+  A parsing library for Python 2.6 and 2.7 that spun off from Plone_.
+RDFCalendar_:
+  A tool for converting between iCalendars and RDF.
+Py-Calendar_:
+  A sparsely documented library.  There's a lot of code in here, but I
+  think it reproduces a lot of stuff that could be borrowed from the
+  standard library.
+pyICSParser_:
+  Another sparsely documented library.  Again, there's a lot of code
+  in here, but I think there's too much local code.
+PyCal_:
+  A (dead?) package.  The PyPI links don't go anywhere.
 
 Installation
 ============
@@ -43,7 +56,13 @@ to stdout and geographic positions to stderr.  Run it with::
 .. _elmcity code: https://github.com/judell/elmcity
 .. _feedparser: https://pypi.python.org/pypi/feedparser/
 .. _Google Calendar: https://support.google.com/calendar/
+.. _icalendar: http://icalendar.readthedocs.org/en/latest/
 .. _nose: https://nose.readthedocs.org/en/latest/
+.. _Plone: http://plone.org/
+.. _Py-Calendar: https://pypi.python.org/pypi/Py-Calendar
+.. _PyCal: https://pypi.python.org/pypi/PyCal
+.. _pyICSParser: https://pypi.python.org/pypi/pyICSParser
 .. _pytz: https://pypi.python.org/pypi/pytz/
+.. _RDFCalendar: https://pypi.python.org/pypi/RDFCalendar
 
 .. _RFC 5545: http://tools.ietf.org/html/rfc5545
